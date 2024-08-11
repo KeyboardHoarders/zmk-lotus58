@@ -60,6 +60,24 @@
 
             mods = <(MOD_LGUI|MOD_RGUI)>;
         };
+
+        bootlo: bootlo {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BOOTLO";
+            bindings = <&kp C_MUTE>, <&bootloader>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
+        };
+
+        bootloplay: bootloplay {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BOOTLOPLAY";
+            bindings = <&kp C_PLAY_PAUSE>, <&bootloader>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
+        };
     };
 
     keymap {
@@ -76,7 +94,7 @@
             bindings = <
 &kp ESC    &kp N1  &kp N2  &kp N3        &kp N4            &kp N5                                       &kp N6     &kp N7         &kp N8     &kp N9   &kp N0    &kp MINUS
 &kp TAB    &kp Q   &kp W   &kp E         &kp R             &kp T                                        &kp Y      &kp U          &kp I      &kp O    &kp P     &kp BACKSPACE
-&kp LSHFT  &kp A   &kp S   &kp D         &kp F             &kp G   &kp C_MUTE        &kp C_PLAY_PAUSE   &kp H      &kp J          &kp K      &kp L    &kp SEMI  &mt RSHFT SQT
+&kp LSHFT  &kp A   &kp S   &kp D         &kp F             &kp G   &bootlo           &bootloplay        &kp H      &kp J          &kp K      &kp L    &kp SEMI  &mt RSHFT SQT
 &kp LCTRL  &kp Z   &kp X   &kp C         &kp V             &kp B   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N      &kp M          &kp COMMA  &kp DOT  &kp FSLH  &mt RCTRL BSLH
                            &kp LEFT_GUI  &kp LEFT_CONTROL  &mo 1   &kp SPACE         &kp ENTER          &lt 2 TAB  &kp RIGHT_ALT  &kp LGUI
             >;
