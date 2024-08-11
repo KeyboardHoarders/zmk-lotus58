@@ -92,7 +92,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_msc SCRL_UP SCRL_DOWN>;
+                <&inc_dec_kp U_WH_U U_WH_D>;
         };
 
         lower_layer {
