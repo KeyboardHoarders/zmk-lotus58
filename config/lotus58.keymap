@@ -24,16 +24,6 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <33 34>;
         };
-
-        bootleft {
-            bindings = <&bootloader>;
-            key-positions = <38 43 5 0>;
-        };
-
-        bootright {
-            bindings = <&bootloader>;
-            key-positions = <6 46 51 11>;
-        };
     };
 
     behaviors {
