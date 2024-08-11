@@ -19,6 +19,21 @@
             layers = <0>;
             bindings = <&kp LGUI>;
         };
+
+        bckspc {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <33 34>;
+        };
+
+        bootleft {
+            bindings = <&bootloader>;
+            key-positions = <38 43 5 0>;
+        };
+
+        bootright {
+            bindings = <&bootloader>;
+            key-positions = <6 46 51 11>;
+        };
     };
 
     behaviors {
@@ -61,7 +76,7 @@
             bindings = <
 &kp ESC    &kp N1  &kp N2  &kp N3        &kp N4            &kp N5                                       &kp N6     &kp N7         &kp N8     &kp N9   &kp N0    &kp MINUS
 &kp TAB    &kp Q   &kp W   &kp E         &kp R             &kp T                                        &kp Y      &kp U          &kp I      &kp O    &kp P     &kp BACKSPACE
-&kp LSHFT  &kp A   &kp S   &kp D         &kp F             &kp G   &kp C_MUTE        &kp K_PLAY_PAUSE   &kp H      &kp J          &kp K      &kp L    &kp SEMI  &mt RSHFT SQT
+&kp LSHFT  &kp A   &kp S   &kp D         &kp F             &kp G   &kp C_MUTE        &kp C_PLAY_PAUSE   &kp H      &kp J          &kp K      &kp L    &kp SEMI  &mt RSHFT SQT
 &kp LCTRL  &kp Z   &kp X   &kp C         &kp V             &kp B   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N      &kp M          &kp COMMA  &kp DOT  &kp FSLH  &mt RCTRL BSLH
                            &kp LEFT_GUI  &kp LEFT_CONTROL  &mo 1   &kp SPACE         &kp ENTER          &lt 2 TAB  &kp RIGHT_ALT  &kp LGUI
             >;
@@ -78,11 +93,11 @@
             //                     |  F11 |      |      |        |  |       |      |       |  F12  |
 
             bindings = <
-&kp GRAVE  &kp F1    &kp F2     &kp F3    &kp F4     &kp F5                     &kp F6        &kp F7     &kp F8    &kp F9     &kp F10    &kp PLUS
-&trans     &kp EXCL  &kp HOME   &kp UP    &kp END    &kp PRCNT                  &kp C_VOL_UP  &kp PG_UP  &kp INS   &kp CARET  &kp PSCRN  &kp MINUS
-&trans     &kp HASH  &kp LEFT   &kp DOWN  &kp RIGHT  &kp DLLR   &trans  &trans  &kp C_VOL_DN  &kp LEFT   &kp UP    &kp RIGHT  &kp TILDE  &kp UNDER
-&trans     &kp AT    &kp MINUS  &kp LBRC  &kp RBRC   &kp AMPS   &trans  &trans  &kp C_MUTE    &kp PG_DN  &kp DOWN  &kp COLON  &kp STAR   &kp PIPE
-                                &trans    &trans     &trans     &trans  &trans  &trans        &trans     &trans
+&kp GRAVE  &kp F1    &kp F2    &kp F3    &kp F4     &kp F5                        &kp F6     &kp F7     &kp F8            &kp F9                &kp F10    &kp PLUS
+&trans     &kp EXCL  &kp HOME  &kp UP    &kp END    &kp PRCNT                     &kp CARET  &kp AMPS   &kp STAR          &kp LEFT_PARENTHESIS  &kp RPAR   &kp MINUS
+&trans     &kp HASH  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DLLR   &trans    &trans   &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp TILDE  &kp UNDER
+&trans     &kp F11   &kp F12   &kp LBRC  &kp RBRC   &kp AMPS   &kp HOME  &kp END  &kp UNDER  &kp PLUS   &kp LEFT_BRACE    &kp RIGHT_BRACE       &kp PIPE   &trans
+                               &trans    &trans     &trans     &trans    &trans   &trans     &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp UP DOWN>;
