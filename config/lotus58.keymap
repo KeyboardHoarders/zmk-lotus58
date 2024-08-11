@@ -73,7 +73,7 @@
         bootloplay: bootloplay {
             compatible = "zmk,behavior-mod-morph";
             label = "BOOTLOPLAY";
-            bindings = <&kp C_PLAY_PAUSE>, <&bootloader>;
+            bindings = <&kp C_PLAY>, <&bootloader>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
