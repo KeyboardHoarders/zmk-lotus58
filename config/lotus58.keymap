@@ -85,7 +85,7 @@
             bindings = <
 &kp ESC    &kp N1  &kp N2  &kp N3        &kp N4            &kp N5                                       &kp N6     &kp N7         &kp N8     &kp N9   &kp N0    &kp MINUS
 &kp TAB    &kp Q   &kp W   &kp E         &kp R             &kp T                                        &kp Y      &kp U          &kp I      &kp O    &kp P     &kp BACKSPACE
-&kp LSHFT  &kp A   &kp S   &kp D         &kp F             &kp G   &kp C_MUTE        &kp DELETE         &kp H      &kp J          &kp K      &kp L    &kp SEMI  &mt RSHFT SQT
+&kp LSHFT  &kp A   &kp S   &kp D         &kp F             &kp G   &kp C_MUTE        &kp C_MUTE         &kp H      &kp J          &kp K      &kp L    &kp SEMI  &mt RSHFT SQT
 &kp LCTRL  &kp Z   &kp X   &kp C         &kp V             &kp B   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N      &kp M          &kp COMMA  &kp DOT  &kp FSLH  &mt RCTRL BSLH
                            &kp LEFT_GUI  &kp LEFT_CONTROL  &mo 1   &kp SPACE         &kp ENTER          &lt 2 TAB  &kp RIGHT_ALT  &kp LGUI
             >;
@@ -111,7 +111,7 @@
                                &trans    &trans     &trans     &trans    &trans   &trans     &trans     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp UP DOWN>;
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         raise_layer {
@@ -130,7 +130,7 @@
                                 &trans    &trans     &trans     &trans  &trans  &trans        &trans        &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp UP DOWN>;
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp RIGHT LEFT>;
         };
 
         adjust_layer {
