@@ -1,6 +1,9 @@
 #add readme select bluetooth profiles.  
+
 #add readme for how to troubleshoot.
+
 #add readme for entering bootloader on lotus58  
+
 #add readme for making your own keymap using keymap editor.  Guide located at keyboardhoarders.com/blog
 
 
